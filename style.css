@@ -61,7 +61,7 @@ a:hover {
 
 #header {
   background-color: #c68e24;
-  padding: 3% 0;
+  padding: 1rem 0;
 }
 
 .nav ul li a {
@@ -137,4 +137,38 @@ p {
 .redireccion__texto {
   font-size: 1.8rem;
   font-weight: lighter;
+}
+
+@media (min-width: 500px) {
+
+  #header{
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+    padding: 3rem;
+  }
+
+  .nav ul {
+    display: flex;
+    padding-right: 2rem;
+    justify-content: space-evenly;
+    width: 40rem;
+  }
+
+  .logo {
+    display: block;
+    padding-left: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 4rem;
+    color: #245CC6;
+    font-family: 'Ramaraja', serif;
+    font-weight: lighter;
+    }
+
 }
