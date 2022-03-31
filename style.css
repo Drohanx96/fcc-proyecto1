@@ -44,14 +44,14 @@ a:hover {
 }
 
 #title {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   font-weight: bolder;
-  padding: 3%;
+  padding: 1rem;
   background-color: #fff;
 }
 
 .subtitulo {
-  font-size: 2.6rem;
+  font-size: 2rem;
   padding: 1.5%;
 }
 
@@ -87,7 +87,7 @@ a:hover {
 }
 
 #img-caption {
-  margin: .5rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 p {
@@ -99,15 +99,18 @@ p {
   padding: 1.5rem;
 }
 
-.ztk-img {
+.ztk-img, .wiki {
   max-width: 100%;
   height: auto;
   border-radius: 15px;
+}
 
+.img-container1, .img-container2 {
+  display: none;
 }
 
 .img-caption {
-  margin: .5rem 2rem;
+  margin: 0.5rem 2rem;
 }
 
 #redireccion {
@@ -139,9 +142,12 @@ p {
   font-weight: lighter;
 }
 
-@media (min-width: 500px) {
+.contact {
+  display: none;
+}
 
-  #header{
+@media (min-width: 500px) {
+  #header {
     display: flex;
     justify-content: space-between;
     height: 6rem;
@@ -164,11 +170,80 @@ p {
     font-weight: bold;
   }
 
+  .logo:hover {
+    cursor: pointer;
+  }
+
   span {
     font-size: 4rem;
-    color: #245CC6;
-    font-family: 'Ramaraja', serif;
+    color: #245cc6;
+    font-family: "Ramaraja", serif;
     font-weight: lighter;
-    }
+  }
 
+  #title {
+    font-size: 3.2rem;
+  }
+
+  .subtitulo {
+    font-size: 2.6rem;
+  }
+
+  #img-div {
+    padding: 1rem 20rem;
+    background-color: #fff;
+  }
+
+  .img-container {
+    padding: 2rem 30rem;
+  }
+
+  .img-container1 {
+    display: block;
+    padding: 2rem 30rem;
+  }
+
+  .img-container2 {
+    display: block;
+    padding: 0rem 40rem;
+  }
+
+  #redireccion{
+    padding: 0rem 10rem;
+  }
+
+  #tribute-info,
+  #zettelkasten {
+    padding: 0rem 10rem 5rem;
+  }
+
+  .social__icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    padding: 0rem 1rem;
+  }
+
+  i {
+    font-size: 5rem;
+    color: #fff;
+  }
+
+  .contact {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .contact:hover {
+    cursor: pointer;
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 10rem;
+  }
 }
