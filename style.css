@@ -76,7 +76,7 @@ a:hover {
 }
 
 #img-div {
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: #fff;
 }
 
@@ -97,6 +97,9 @@ p {
 
 .img-container {
   padding: 1.5rem;
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ztk-img, .wiki {
@@ -146,7 +149,9 @@ p {
   display: none;
 }
 
-@media (min-width: 500px) {
+/* Versión Movil */
+
+@media (min-width: 1024px) {
   #header {
     display: flex;
     justify-content: space-between;
@@ -195,17 +200,24 @@ p {
   }
 
   .img-container {
-    padding: 2rem 30rem;
+    padding: 2rem 10rem;
+    max-width: 70rem;
   }
 
   .img-container1 {
     display: block;
-    padding: 2rem 30rem;
+    padding: 2rem 10rem;
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .img-container2 {
     display: block;
-    padding: 0rem 40rem;
+    padding: 0rem 10rem;
+    max-width: 50rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #redireccion{
